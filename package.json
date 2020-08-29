@@ -1,0 +1,21 @@
+{
+  "name": "jnl-lift-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "Yehuda Neufeld <yehuda@yiddishe-kop.com> (https://yiddishe-kop.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "tailwindcss": "^1.7.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.4"
+  }
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hover-effect {
+      overflow: hidden;
+    }
+
+    .hover-effect img {
+      transition: transform .3s ease;
+      transform: perspective(1000px) translate3d(0, 0, 0);
+    }
+
+    .hover-effect:hover img {
+      transform: perspective(1000px) translate3d(0, 0, 60px);
+    }
+
+    .hover-effect p {
+      height: 0px;
+      transition: height .3s ease;
+    }
+
+    .hover-effect:hover p {
+      height: 64px;
+    }
+
+    .transition {
+      transition: all .3s ease;
+    }
+  </style>
+  <title>JNL Lift Services</title>
+</head>
+
+<body class="text-blue-900 bg-gray-300">
+
+  <header class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 ">
+    <div class="w-24 h-16 bg-gray-600 logo"></div>
+
+    <nav class="flex items-center mx-12 space-x-8 text-sm font-semibold tracking-wider text-gray-100 uppercase">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <section id="home" class="relative h-screen bg-pink-100">
+    <img src="img/steps.jpg" class="absolute object-cover w-full h-full">
+    <!-- overlay -->
+    <div class="absolute w-full h-full bg-blue-300 bg-opacity-25"></div>
+  </section>
+
+  <section id="services" class="py-16">
+
+    <h1 class="text-6xl font-bold text-center text-blue-900 uppercase">
+      <span class="relative">
+        Services
+        <span class="absolute bottom-0 left-0 w-4/5 h-3 -mb-4 bg-gray-500"></span>
+      </span>
+    </h1>
+
+    <div class="grid max-w-5xl grid-cols-12 gap-4 px-4 mx-auto mt-12">
+      <div class="col-span-12 p-2 transition bg-gray-100 shadow sm:col-span-4 hover:shadow-2xl">
+        <img src="img/skyscrapers.jpg" class="object-cover w-full h-56">
+        <h4 class="mt-2 text-xl font-semibold text-center uppercase">MECHANICAL & ELECTRICAL DESIGN</h4>
+        <p class="px-3 mt-2">With over 100 years of combined knowledge, Prospero Projects know
+          the importance of good design and co-ordination of services within
+          building projects. Building services are the heart of any
+          building, designed wrong could be costly for the build and running
+          costs.</p>
+      </div>
+      <div class="col-span-12 p-2 text-white transition bg-blue-900 shadow sm:col-span-4 hover:shadow-2xl">
+        <img src="img/skyscrapers.jpg" class="object-cover w-full h-56">
+        <h4 class="mt-2 text-xl font-semibold text-center uppercase">CONSULTANCY</h4>
+        <p class="px-3 mt-2">Prospero Projects can offer a wide array of consultancy services
+          including feasibility studies and site surveys to assist our
+          clients in the project planning and cost consideration of the
+          projects prior to any expenses on site.</p>
+      </div>
+      <div class="col-span-12 p-2 transition bg-gray-100 shadow sm:col-span-4 hover:shadow-2xl">
+        <img src="img/skyscrapers.jpg" class="object-cover w-full h-56">
+        <h4 class="mt-2 text-xl font-semibold text-center uppercase">PROJECT MANAGEMENT</h4>
+        <p class="px-3 mt-2">Making sure a project runs smoothly from conception to completion
+          is key for every client. Prospero Projects can assist with
+          pre-start meetings alongside contractors, procurement of
+          materials, all the way to snagging and project sign off.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="w-screen py-16 overflow-hidden">
+
+    <h1 class="text-6xl font-bold text-center text-blue-900 uppercase">
+      <span class="relative">
+        About
+        <span class="absolute bottom-0 left-0 w-4/5 h-3 -mb-4 bg-gray-500"></span>
+      </span>
+    </h1>
+
+    <div class="relative mt-16">
+
+      <!-- Blue box -->
+      <div class="absolute left-0 z-0 items-center hidden w-1/2 h-full bg-blue-900 lg:block"></div>
+
+      <div class="relative flex flex-col items-center justify-center max-w-6xl mx-auto lg:justify-between lg:flex-row">
+
+        <!-- Circle -->
+        <div class="absolute top-0 right-0 z-0 hidden w-56 h-56 bg-gray-400 rounded-full lg:block circle"
+          style="transform: translate(20%, -30%);"></div>
+
+        <img src="img/building.jpg" class="relative z-10 lg:w-1/2 lg:ml-12" style="min-width: 20rem;">
+
+        <!-- Article -->
+        <div class="z-20 flex justify-center py-12 -mt-32 lg:mt-0 lg:ml-20 lg:justify-end">
+          <div class="relative lg:mr-12">
+            <div class="absolute top-0 left-0 z-0 w-full h-full -mt-6 -ml-6 bg-blue-900"></div>
+            <article class="relative z-10 max-w-md px-10 py-20 font-medium text-blue-800 bg-white shadow-lg"
+              style="min-width: 20rem;">
+              Prospero Projects Ltd know the importance
+              of good design and co-ordination of services within building
+              projects. With this in mind we pride ourselves in being involved
+              right from the outset until the project is complete. Some of the
+              most trying parts of a project are organising new incoming
+              supplies. Having completed many of these often tricky tasks
+              Prospero Projects Ltd can assure you that your project starts on
+              the right foot. Specialising in the refurbishment of High End
+              residential, Prospero Projects Ltd have completed many change of
+              use projects converting flats into a laser eye surgery and
+              office blocks into luxury flats giving us a diverse
+              understanding over a vast array of projects.
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projects" class="py-16">
+
+    <h1 class="text-6xl font-bold text-center text-blue-900 uppercase">
+      <span class="relative">
+        Projects
+        <span class="absolute bottom-0 left-0 w-4/5 h-3 -mb-4 bg-gray-500"></span>
+      </span>
+    </h1>
+
+    <div class="relative grid max-w-5xl grid-cols-12 gap-4 px-4 mx-auto mt-16 text-center">
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/1.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/2.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/2.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/1.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/1.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+      <figure class="relative h-56 col-span-4 group hover-effect">
+        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
+          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
+          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
+            quibusdam dolorum</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16">
+
+    <h1 class="text-6xl font-bold text-center text-blue-900 uppercase">
+      <span class="relative">
+        Contact
+        <span class="absolute bottom-0 left-0 w-4/5 h-3 -mb-4 bg-gray-500"></span>
+      </span>
+    </h1>
+
+    <div class="max-w-5xl px-4 mx-auto mt-16">
+      <iframe class="w-full border-b-4 border-blue-800" height="400"
+        src="https://maps.google.com/maps?q=Prospero%20Projects%20227a%20Lower%20Blandford%20Road%2C%20bh18%208dn&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+
+    <div class="max-w-5xl mx-auto mt-16">
+
+      <div class="grid grid-cols-12 gap-4 px-4">
+        <div class="col-span-12 sm:col-span-5">
+
+          <h1 class="text-3xl font-medium">Inquiries</h1>
+          <p class="mt-2">
+            For any inquiries or advice relating to future projects, please
+            call: 01202 699008 or fill out the following form and one of our
+            members of staff will gladly follow this up
+          </p>
+          <form action="#" class="flex flex-col items-stretch mt-6 space-y-4">
+            <input type="text" class="bg-gray-100 form-input" placeholder="Name *">
+            <input type="email" class="bg-gray-100 form-input" placeholder="Email *">
+            <input type="text" class="bg-gray-100 form-input" placeholder="Subject *">
+            <textarea type="text" class="bg-gray-100 form-input" rows="5" placeholder="Message *"></textarea>
+            <input type="submit" value="Send"
+              class="px-4 py-2 text-gray-100 bg-blue-900 rounded focus:outline-none focus:shadow-outline">
+          </form>
+        </div>
+
+        <div class="hidden col-span-3 sm:block"></div>
+
+        <div class="col-span-12 mt-16 sm:col-span-4 sm:mt-0" style="flex: 1 1 25%;">
+
+          <h1 class="text-3xl font-medium">Head Office</h1>
+          <p>First Floor</p>
+          <p>227a Lower Blandford Rd</p>
+          <p>Broadstone</p>
+          <p>Dorset, BH18 8DN</p>
+          <p class="my-5"><a href="mailto:stuart@prosperoprojects.com" class="underline">stuart@prosperoprojects.com</a>
+          </p>
+          <p class="my-1">Tel: <a href="tel:01202 699008">01202 699008</a></p>
+
+
+          <h1 class="mt-6 text-3xl font-medium">Employment</h1>
+          <p class="mt-2">
+            We are currently looking for both Mechanical & Electrical
+            engineers on an ad hoc and full time basis.
+          </p>
+          <p class="mt-2">
+            To apply for a job with Prospero Projects, please send a cover
+            letter together with your C.V. to: <a href="mailto:stuart@prosperoprojects.com"
+              class="underline">stuart@prosperoprojects.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="px-4 py-8 mt-10 text-gray-400 bg-blue-900">
+    <div class="flex items-center justify-between max-w-5xl mx-auto ">
+      <p>&copy; 2020 by Prospero Projects Ltd</p>
+      <div class="flex items-center space-x-6 text-gray-100">
+        <a href="#" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-6">
+            <path d="M0 0h24v24H0z" stroke="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 011-1h3V3h-3a5 5 0 00-5 5v2H7" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a href="#" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-6">
+            <path d="M0 0h24v24H0z" stroke="none"></path>
+            <path
+              d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"
+              fill="currentColor">
+            </path>
+          </svg>
+        </a>
+        <a href="#" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+              fill="currentColor" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
