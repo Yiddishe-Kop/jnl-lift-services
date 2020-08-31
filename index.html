@@ -81,22 +81,39 @@
 
   </header>
 
-  <section id="home" class="relative h-screen bg-pink-100">
-    <img src="img/hero.jpg" class="absolute object-cover w-full h-full">
-    <!-- overlay -->
-    <div class="absolute flex items-center justify-center w-full h-full bg-blue-300 bg-opacity-25">
-      <div class="px-16 py-10 bg-gray-200 bg-opacity-75 rounded-lg">
+  <section id="home" class="relative flex items-center h-screen bg-gray-200 lg:relative">
 
-        <h1
-          class="text-2xl font-black text-transparent sm:text-3xl md:text-5xl lg:text-6xl bg-gradient-to-br bg-clip-text from-blue-900 to-blue-700">
-          Lorem ipsum dolor</h1>
-        <p class="text-xl font-semibold">Lorem ipsum dolor sit amet quis alias natus perspiciatis consectetur
-          adipisicing
-          elit.<br>
-          Dolor sapiente
-          nisi
-          commodi inventore eius illo ad!</p>
+    <div class="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
+      <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+        <h2
+          class="text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+          Lorem ipsum
+          <br class="xl:hidden">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-500">dolor lorem</span>
+        </h2>
+        <p class="max-w-md mx-auto mt-3 text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+          fugiat
+          veniam occaecat fugiat aliqua.
+        </p>
+        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+          <div class="rounded-md shadow">
+            <a href="#about"
+              class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-700 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
+              Read more
+            </a>
+          </div>
+          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            <a href="#contact"
+              class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-700 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
+              Contact us
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <img class="absolute inset-0 object-cover w-full h-full" src="img/hero.jpg">
     </div>
   </section>
 
