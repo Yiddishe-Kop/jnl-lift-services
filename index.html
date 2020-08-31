@@ -39,6 +39,38 @@
     [x-cloak] {
       display: none;
     }
+
+    .fade-in-left {
+      animation: fade-in-left .6s cubic-bezier(.39, .575, .565, 1.000) .6s both
+    }
+
+    @keyframes fade-in-left {
+      0% {
+        transform: translateX(-50px);
+        opacity: 0
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1
+      }
+    }
+
+    .rotate-in-2-cw {
+      animation: rotate-in-2-cw .8s cubic-bezier(.25, .46, .45, .94) both
+    }
+
+    @keyframes rotate-in-2-cw {
+      0% {
+        transform: rotate(-45deg);
+        opacity: 0
+      }
+
+      100% {
+        transform: rotate(0);
+        opacity: 1
+      }
+    }
   </style>
   <title>JNL Lift Services</title>
 </head>
@@ -86,15 +118,16 @@
   </header>
 
   <section id="home" class="relative h-screen bg-pink-100">
-    <img src="img/hero.jpg" class="absolute object-cover w-full h-full">
+    <video src="img/buildings.mp4" class="absolute object-cover w-full h-full" autoplay muted></video>
     <!-- overlay -->
     <div class="absolute flex items-center justify-center w-full h-full bg-blue-300 bg-opacity-25">
-      <div class="px-16 py-10 bg-gray-200 bg-opacity-75 rounded-lg">
+      <div class="px-16 py-10 bg-gray-200 bg-opacity-75 rounded-lg rotate-in-2-cw">
 
         <h1
           class="text-2xl font-black text-transparent sm:text-3xl md:text-5xl lg:text-6xl bg-gradient-to-br bg-clip-text from-blue-900 to-blue-700">
           Lorem ipsum dolor</h1>
-        <p class="text-xl font-semibold">Lorem ipsum dolor sit amet quis alias natus perspiciatis consectetur
+        <p class="text-xl font-semibold fade-in-left">Lorem ipsum dolor sit amet quis alias natus perspiciatis
+          consectetur
           adipisicing
           elit.<br>
           Dolor sapiente
