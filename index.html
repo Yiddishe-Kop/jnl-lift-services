@@ -35,6 +35,10 @@
     .transition {
       transition: all .3s ease;
     }
+
+    [x-cloak] {
+      display: none;
+    }
   </style>
   <title>JNL Lift Services</title>
 </head>
@@ -70,7 +74,7 @@
     </button>
 
     <!-- Mobile Menu -->
-    <nav x-show.transition.origin.top.right.scale="open"
+    <nav x-show.transition.origin.top.right.scale="open" x-cloak
       class="absolute top-0 right-0 flex flex-col p-3 mt-16 space-y-2 text-blue-100 transition bg-blue-900 ">
       <a class="px-3 py-1 rounded hover:bg-blue-800" href="#home">Home</a>
       <a class="px-3 py-1 rounded hover:bg-blue-800" href="#services">Services</a>
