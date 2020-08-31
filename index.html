@@ -39,10 +39,13 @@
   <title>JNL Lift Services</title>
 </head>
 
-<body class="text-blue-900 bg-gray-300">
+<body class="overflow-x-hidden text-blue-900 bg-gray-300">
 
   <header x-data="{ open: false }" class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 ">
-    <div class="w-24 h-16 bg-gray-600 logo"></div>
+
+    <a href="#home" class="h-16 bg-white logo">
+      <img src="/img/logo.svg" alt="JNL Lift Services" class="h-full">
+    </a>
 
     <nav
       class="items-center hidden mx-12 space-x-8 text-sm font-semibold tracking-wider text-gray-100 uppercase sm:flex">
@@ -79,9 +82,22 @@
   </header>
 
   <section id="home" class="relative h-screen bg-pink-100">
-    <img src="img/steps.jpg" class="absolute object-cover w-full h-full">
+    <img src="img/hero.jpg" class="absolute object-cover w-full h-full">
     <!-- overlay -->
-    <div class="absolute w-full h-full bg-blue-300 bg-opacity-25"></div>
+    <div class="absolute flex items-center justify-center w-full h-full bg-blue-300 bg-opacity-25">
+      <div class="px-16 py-10 bg-gray-200 bg-opacity-75 rounded-lg">
+
+        <h1
+          class="text-2xl font-black text-transparent sm:text-3xl md:text-5xl lg:text-6xl bg-gradient-to-br bg-clip-text from-blue-900 to-blue-700">
+          Lorem ipsum dolor</h1>
+        <p class="text-xl font-semibold">Lorem ipsum dolor sit amet quis alias natus perspiciatis consectetur
+          adipisicing
+          elit.<br>
+          Dolor sapiente
+          nisi
+          commodi inventore eius illo ad!</p>
+      </div>
+    </div>
   </section>
 
   <section id="services" class="py-16">
@@ -94,8 +110,8 @@
     </h1>
 
     <div class="grid max-w-5xl grid-cols-12 gap-4 px-4 mx-auto mt-12">
-      <div class="col-span-12 p-2 transition bg-gray-100 shadow sm:col-span-4 hover:shadow-2xl">
-        <img src="img/skyscrapers.jpg" class="object-cover w-full h-56">
+      <div class="col-span-12 p-2 transition bg-white shadow sm:col-span-4 hover:shadow-2xl">
+        <img src="img/1.jpg" class="object-cover w-full h-56">
         <h4 class="mt-2 text-xl font-semibold text-center uppercase">MECHANICAL & ELECTRICAL DESIGN</h4>
         <p class="px-3 mt-2">With over 100 years of combined knowledge, Prospero Projects know
           the importance of good design and co-ordination of services within
@@ -104,15 +120,15 @@
           costs.</p>
       </div>
       <div class="col-span-12 p-2 text-white transition bg-blue-900 shadow sm:col-span-4 hover:shadow-2xl">
-        <img src="img/skyscrapers.jpg" class="object-cover w-full h-56">
+        <img src="img/2.jpg" class="object-cover w-full h-56">
         <h4 class="mt-2 text-xl font-semibold text-center uppercase">CONSULTANCY</h4>
         <p class="px-3 mt-2">Prospero Projects can offer a wide array of consultancy services
           including feasibility studies and site surveys to assist our
           clients in the project planning and cost consideration of the
           projects prior to any expenses on site.</p>
       </div>
-      <div class="col-span-12 p-2 transition bg-gray-100 shadow sm:col-span-4 hover:shadow-2xl">
-        <img src="img/skyscrapers.jpg" class="object-cover w-full h-56">
+      <div class="col-span-12 p-2 transition bg-white shadow sm:col-span-4 hover:shadow-2xl">
+        <img src="img/3.jpg" class="object-cover w-full h-56">
         <h4 class="mt-2 text-xl font-semibold text-center uppercase">PROJECT MANAGEMENT</h4>
         <p class="px-3 mt-2">Making sure a project runs smoothly from conception to completion
           is key for every client. Prospero Projects can assist with
@@ -182,7 +198,7 @@
     <div
       class="relative grid max-w-5xl grid-cols-4 gap-4 px-4 mx-auto mt-16 text-center sm:grid-cols-8 md:grid-cols-12">
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/1.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/1.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -190,7 +206,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/2.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/2.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -198,7 +214,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/3.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -206,7 +222,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/2.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/4.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -214,7 +230,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/5.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -222,7 +238,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/1.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/6.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -230,7 +246,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/7.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -238,7 +254,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/1.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/8.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
@@ -246,7 +262,7 @@
         </figcaption>
       </figure>
       <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/3.jpg" class="object-cover w-full h-full">
+        <img src="img/gallery/9.jpg" class="object-cover w-full h-full">
         <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
           <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
           <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
