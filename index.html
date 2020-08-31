@@ -41,15 +41,39 @@
 
 <body class="text-blue-900 bg-gray-300">
 
-  <header class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 ">
+  <header x-data="{ open: true }" class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 ">
     <div class="w-24 h-16 bg-gray-600 logo"></div>
 
-    <nav class="flex items-center mx-12 space-x-8 text-sm font-semibold tracking-wider text-gray-100 uppercase">
+    <nav
+      class="items-center hidden mx-12 space-x-8 text-sm font-semibold tracking-wider text-gray-100 uppercase sm:flex">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#projects">Project</a>
       <a href="#contact">Contact</a>
+    </nav>
+
+    <button @click="open = !open" class="p-3 mr-1 focus:outline-none">
+      <svg x-show="!open" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-blue-200">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <svg x-show="open" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-blue-200">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <!-- Mobile Menu -->
+    <nav x-show.transition.origin.top.right.scale="open"
+      class="absolute top-0 right-0 flex flex-col p-3 mt-16 space-y-2 text-blue-100 transition bg-blue-900 ">
+      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#home">Home</a>
+      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#services">Services</a>
+      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#about">About</a>
+      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#projects">Project</a>
+      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#contact">Contact</a>
     </nav>
 
   </header>
@@ -327,6 +351,8 @@
     </div>
   </footer>
 
+  <!-- Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js" defer></script>
 </body>
 
 </html>
