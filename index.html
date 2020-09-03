@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.min.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
     html {
       scroll-behavior: smooth;
     }
@@ -71,24 +73,26 @@
         opacity: 1
       }
     }
+    
   </style>
   <title>JNL Lift Services</title>
 </head>
 
 <body class="overflow-x-hidden text-blue-900 bg-gray-300">
 
-  <header x-data="{ open: false }" class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 ">
+  <header x-data="{ open: false }" class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 md:justify-center ">
 
-    <a href="#home" class="h-16 bg-white logo">
+    <a href="#home" class="h-16 bg-white logo md:hidden">
       <img src="img/logo.svg" alt="JNL Lift Services" class="h-full">
     </a>
 
     <nav
-      class="items-center hidden mx-12 space-x-8 text-sm font-semibold tracking-wider text-gray-100 uppercase sm:flex">
-      <a href="#home">Home</a>
+      class="font-montserrat items-center hidden mx-12 space-x-8 text-sm font-semibold tracking-wider text-gray-100 uppercase sm:flex">
+    
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#projects">Project</a>
+      <a href="#home" class="h-16 my-2 bg-white logo"><img src="img/logo.svg" alt="JNL Lift Services" class="h-full"></a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -111,13 +115,13 @@
       <a class="px-3 py-1 rounded hover:bg-blue-800" href="#home">Home</a>
       <a class="px-3 py-1 rounded hover:bg-blue-800" href="#services">Services</a>
       <a class="px-3 py-1 rounded hover:bg-blue-800" href="#about">About</a>
-      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#projects">Project</a>
+      <a class="px-3 py-1 rounded hover:bg-blue-800" href="#projects">Projects</a>
       <a class="px-3 py-1 rounded hover:bg-blue-800" href="#contact">Contact</a>
     </nav>
 
   </header>
 
-  <section id="home" class="relative h-screen bg-pink-100">
+  <section id="home" class="relative h-screen bg-pink-100 ">
     <video src="img/hom-vid.mp4" class="absolute object-cover w-full h-full" autoplay muted loop></video>
     <!-- overlay -->
     <div class="absolute flex items-center justify-center w-full h-full bg-blue-300 bg-opacity-25">
@@ -193,7 +197,7 @@
     <div class="relative mt-16">
 
       <!-- Blue box -->
-      <div class="absolute left-0 z-0 items-center hidden w-1/2 h-full bg-blue-900 lg:block">
+      <div class="absolute left-0 z-0 items-center hidden w-2/5 h-full bg-blue-800 lg:block">
       </div>
 
       <div class="relative flex flex-col items-center justify-center max-w-6xl mx-auto lg:justify-between lg:flex-row lg:max-w-full lg:px-12 xl:max-w-full xl:px-32">
@@ -203,7 +207,7 @@
           style="transform: translate(20%, -30%);">
         </div>
 
-        <img src="img/building.jpg" class="relative z-10 lg:w-2/3 lg:ml-4 xl:w-1/2 xl:ml-12" style="min-width: 20rem;">
+        <img src="img/building.jpg" class="relative z-10 lg:w-4/5 lg:ml-4 xl:w-3/5 xl:-ml-20" style="min-width: 20rem;">
 
         <!-- Article -->
         <div class="z-20 flex justify-center py-12 -mt-32 lg:mt-0 lg:ml-20 lg:justify-end">
