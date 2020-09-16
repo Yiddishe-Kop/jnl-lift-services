@@ -80,7 +80,7 @@
 
 <body class="overflow-x-hidden text-blue-900 bg-gray-300">
 
-  <header x-data="{ open: false }" class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 md:justify-center ">
+  <header x-data="{ open: false }" class="fixed top-0 z-50 flex items-stretch justify-between w-screen bg-blue-900 md:justify-center md:bg-opacity-0 ">
 
     <a href="#home" class="h-16 bg-white logo md:hidden">
       <img src="img/logo.svg" alt="JNL Lift Services" class="h-full">
@@ -122,18 +122,19 @@
   </header>
 
   <section id="home" class="relative h-screen bg-pink-100 ">
-    <video src="img/adobe_spark_video.mp4" class="absolute object-cover w-full h-full" autoplay muted loop></video>
+    <!-- <video src="img/adobe_spark_video.mp4" class="absolute object-cover w-full h-full" autoplay muted loop></video> bg-gradient-to-br bg-clip-text from-blue-900 to-blue-700-->
+    <img src="img/london2.jpg" class="absolute object-cover w-full h-full">
     <!-- overlay -->
-    <div class="absolute flex items-center justify-center w-full h-full bg-blue-300 bg-opacity-25">
-      <div class="px-16 py-10 bg-gray-200 bg-opacity-50 rounded-lg rotate-in-2-cw">
+    <div class="absolute flex items-center justify-start w-full h-full bg-blue-300 bg-opacity-0 lg:ml-1">
+      <div class="px-16 py-10 bg-gray-200 bg-opacity-50 rounded-lg rotate-in-2-cw lg:bg-opacity-0 lg:pb-64">
 
         <h1
-          class="text-2xl text-center font-black text-transparent sm:text-3xl md:text-5xl lg:text-6xl bg-gradient-to-br bg-clip-text from-blue-900 to-blue-700">
-          Welcome to JNL</h1>
-        <p class="text-xl text-center font-semibold fade-in-left">
-          We offer a complete Lift package incorporating Quality, Safety and Security
+          class="text-2xl text-center font-black text-transparent sm:text-3xl md:text-5xl lg:text-6xl text-blue-800 lg:text-white">
+          JNL Lift Services</h1>
+        <p class="text-xl text-center font-semibold fade-in-left text-blue-800 lg:text-white">
+          Offering the complete Lift package incorporating Quality, Safety and Security
           <br>
-          <b>Move your way with JNL Lift Services</b>
+          
         </p>
       </div>
     </div>
@@ -294,38 +295,7 @@
             quibusdam dolorum</p>
         </figcaption>
       </figure>
-      <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/gallery/6.jpg" class="object-cover w-full h-full">
-        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
-          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
-          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
-            quibusdam dolorum</p>
-        </figcaption>
-      </figure>
-      <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/gallery/7.jpg" class="object-cover w-full h-full">
-        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
-          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
-          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
-            quibusdam dolorum</p>
-        </figcaption>
-      </figure>
-      <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/gallery/8.jpg" class="object-cover w-full h-full">
-        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
-          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
-          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
-            quibusdam dolorum</p>
-        </figcaption>
-      </figure>
-      <figure class="relative h-56 col-span-4 group hover-effect">
-        <img src="img/gallery/9.jpg" class="object-cover w-full h-full">
-        <figcaption class="absolute bottom-0 w-full transition bg-gray-100 bg-opacity-25 group-hover:bg-opacity-75">
-          <h2 class="py-1 text-xl font-bold uppercase">Lorem Ipsum</h2>
-          <p class="px-2 text-sm sm:text-base">Lorem ipsum dolor sit. Voluptatem magnam voluptates
-            quibusdam dolorum</p>
-        </figcaption>
-      </figure>
+     
     </div>
   </section>
 
@@ -381,8 +351,7 @@
 
           <h1 class="mt-6 text-3xl font-medium">Employment</h1>
           <p class="mt-2">
-            We are currently looking for both Mechanical & Electrical
-            engineers on an ad hoc and full time basis.
+            We are currently looking for both Lift engineers & senior technicians on an ad hoc and full time basis.
           </p>
           <p class="mt-2">
             To apply for a job with JNL, please send a cover
