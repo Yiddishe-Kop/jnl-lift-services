@@ -2,6 +2,10 @@
 
 /* Document
    ========================================================================== */
+.font-montserrat{
+   font-family: 'Montserrat', sans-serif;
+}
+
 
 /**
  * 1. Correct the line height in all browsers.
